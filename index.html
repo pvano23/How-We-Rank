@@ -12,15 +12,16 @@
    <style>
       body {
          margin: 0;
-         height: 250vh;
+         height: 375vh;
          display: flex; 
          flex-direction: column;
          align-items: center;
+         font-family: 'Didact Gothic', sans-serif; /* Default font for other text */
       }
 
       .container {
          width: 99%;
-         height: 13%;
+         height: 9%;
          border: 2px solid black; 
          position: relative;
          display: flex;
@@ -58,32 +59,22 @@
          color: black;
       }
      
+      h1 {
+         font-family: 'Oswald', serif;
+         color: black;
+         font-size: 42px;
+         margin: 50px; 
+         margin-left: -1025px;
+      }
      
-     h1 {
-            font-family: 'Oswald', serif;
-            color: black;
-            font-size: 42px;
-            margin: 50px; 
-           margin-left: -1025px;
-        }
-     
-     h2 {
-            font-family: 'Didact Gothic', serif;
-            color: black;
-            font-size: 28px;
-            margin-top: -10px;
-           margin-left: -900px;
-           text-align: center; /* Align headings to center */
-            }
-     
-      h3 {
-            font-family: 'Didact Gothic', serif;
-            color: black;
-            font-size: 28px;
-            margin-top: -10px;
-           margin-left: -800px;
-           text-align: center; /* Align headings to center */
-            }
+      h2, h3 {
+         font-family: 'Didact Gothic', serif;
+         color: black;
+         font-size: 28px;
+         margin-top: -10px;
+         margin-left: -900px;
+         text-align: center; /* Align headings to center */
+      }
 
       img {
          position: absolute;
@@ -128,7 +119,7 @@
       .column {
          flex: 1;
          padding: 10px;
-        width: 325px;
+         width: 325px;
          height: 105px;
          border-radius: 3px;
          overflow: hidden;
@@ -141,6 +132,62 @@
 
       .column:nth-child(3) {
          background-color: #DBDBDB;
+      }
+
+      .section-content {
+        text-align: left; /* Align the content text to the left */
+        margin-left: 0;   /* Remove any left margin */
+        padding-left: 0;  /* Remove any left padding if needed */
+    }
+
+      .grade-section {
+        text-align: left; /* Align the content text to the left */
+        margin-left: 0;   /* Remove any left margin */
+        padding-left: 0;  /* Remove any left padding */
+    }
+
+      .grade-section h5 {
+         font-family: 'Oswald', serif; /* Oswald font for all grade breakdown headings */
+         font-size: 24px;
+         font-weight: bold;
+         margin-bottom: 20px;
+      }
+
+      .grade-section p {
+         font-family: 'Didact Gothic', sans-serif;
+         font-size: 16px;
+         line-height: 1.5;
+      }
+
+      /* New Report Section */
+      .scouting-report {
+         display: flex;
+         gap: 40px;
+         justify-content: center;
+         margin-top: 40px;
+      }
+
+      .report-column {
+         width: 45%;
+      }
+
+      .report-column h4 {
+         font-family: 'Oswald', sans-serif; /* Oswald font for report column titles */
+         font-size: 22px;
+         margin-bottom: 15px;
+         text-align: center;
+         font-weight: bold;
+      }
+
+      .report-column ul {
+         list-style-type: none;
+         padding: 0;
+         font-family: 'Didact Gothic', sans-serif; /* Didact Gothic for list items */
+         font-size: 16px;
+      }
+
+      .report-column ul li {
+         margin-bottom: 10px;
       }
 
    </style>
@@ -173,7 +220,7 @@
 
    <div class="row">
       <div class="column">
-         <h4>Purpose & Get Scouted</h4>
+         <h4>Purpose &amp; Goals We For You</h4>
          <p>What's the goal of our scouting?</p>
       </div>
       <div class="column">
@@ -184,6 +231,113 @@
          <h4>Scouting Grade</h4>
          <p>How does your grade get calculated?</p>
       </div>
+   </div>
+
+   <div class="section-content">
+      <h4>Purpose & Goals We For You</h4>
+      <p>As mentioned in our home page, I am committed to helping you achieve your athletic goals. I am tasked in offering scouting services with detailed film evaluations using my advanced NFL-level grading scale to assess your skills. This scouting service is designed to highlight your value to coaches and help them filter through potential recruits. Once evaluated, your profile is added to my prospect board, I am proud to send it to over 175+ college coaches each week. The most important aspect for me, as a scout, not a recruiter, my goal is to amplify your exposure to coaches!</p>
+
+      <h4>Our Criteria Scouting Report</h4>
+      <p>Once you fill out the form under the category “Profile” dropdown “Players Get Scouted”, as mentioned I will receive standard information about you then depending on your chosen the criteria changes on how depth your film evaluation has been done. The prospect boards include both American and Canadian players, providing a comprehensive view of potential talent across North America.</p>
+   </div>
+
+   <!-- New Highlight Scouting Report Section -->
+   <div class="scouting-report">
+      <div class="report-column">
+         <h4>Highlight Scouting Report</h4>
+         <ul>
+            <li><strong>Player Overview:</strong></li>
+            <ul>
+               <li>Position, Class, Team, Height, Weight, GPA, Overall Grade</li>
+            </ul>
+            <li><strong>Strengths:</strong></li>
+            <ul>
+               <li>Coverage Skills</li>
+               <li>Tackling Ability</li>
+               <li>Route Running</li>
+               <li>Mental and Physical Attributes (Instincts, Processing Speed, Competitive Toughness)</li>
+            </ul>
+            <li><strong>Weaknesses:</strong></li>
+            <ul>
+               <li>Areas for Improvement in Physicality and Consistency</li>
+            </ul>
+            <li><strong>Development Potential:</strong></li>
+            <ul>
+               <li>Projected Fit at the Next Level</li>
+               <li>Suitability for Various Schemes</li>
+            </ul>
+         </ul>
+      </div>
+
+      <!-- New Full Game Scouting Report Section -->
+      <div class="report-column">
+         <h4>Full Game Scouting Report</h4>
+         <ul>
+            <li><strong>Player Profile:</strong></li>
+            <ul>
+               <li>Height, Weight, Position</li>
+            </ul>
+            <li><strong>Game Analysis:</strong></li>
+            <ul>
+               <li>In-depth Performance Breakdown from 3 Full Games</li>
+               <li>Key Strengths: Mobility, Pass-Rushing, Length</li>
+               <li>Areas for Growth: Physicality, Hand Technique</li>
+            </ul>
+            <li><strong>Scheme Fit:</strong></li>
+            <ul>
+               <li>Projection in Different Defensive Schemes</li>
+               <li>Future Development Potential</li>
+            </ul>
+            <li><strong>Additional Information:</strong></li>
+            <ul>
+               <li>Player Contact Details</li>
+               <li>Access to Game Film for Further Evaluation</li>
+            </ul>
+         </ul>
+      </div>
+   </div>
+
+   <div class="grade-section">
+      <h5>Scouting Grade Breakdown</h5>
+      <p>This section will give you an overview of the different components of our grading system.</p>
+      <ul>
+         <li><strong>ELITE LEVEL PROSPECT</strong></li>
+         <ul>
+            <li>PROJECTION: D1 FBS</li>
+            <li>This player is an elite athlete with standout traits, making them a top-tier recruit that can compete at the FBS level.</li>
+            <li>ADD 5 stars IMAGE 85+</li>
+         </ul>
+         <li><strong>HIGH LEVEL PROSPECT</strong></li>
+         <ul>
+            <li>PROJECTION: D1 FCS, D2</li>
+            <li>This player possesses high-level talent and a skill set worthy of competing at the D1 FCS level and top-tier D2 programs, though they may still require further skill development.</li>
+            <li>ADD 4 stars IMAGE 75-84</li>
+         </ul>
+         <li><strong>GOOD LEVEL PROSPECT</strong></li>
+         <ul>
+            <li>PROJECTION: D1 FCS, D2, U SPORTS</li>
+            <li>This player has strong measurables and athletic traits but lacks the size or skill for higher levels. They are a top-tier U SPORTS prospect, low-tier D1 FCS, and high-tier D2 candidate.</li>
+            <li>ADD 3 stars IMAGE 70-74</li>
+         </ul>
+         <li><strong>SOLID LEVEL PROSPECT</strong></li>
+         <ul>
+            <li>PROJECTION: U SPORTS, D2</li>
+            <li>This player possesses solid athletic and skill traits, making them a quality U SPORTS prospect and a D2-worthy player. Players rated 64+ are considered quality recruits at the U SPORTS and D2 levels.</li>
+            <li>ADD 3 stars IMAGE 58-69</li>
+         </ul>
+         <li><strong>SATISFACTORY LEVEL PROSPECT</strong></li>
+         <ul>
+            <li>PROJECTION: U SPORTS, D3, CUFL, JUCO</li>
+            <li>This player either possesses developable physical traits or lacks ideal measurables but is a solid football player. Either way, they are long-term projects with potential upside and are priority CUFL recruits.</li>
+            <li>ADD 1 star IMAGE 50-57</li>
+         </ul>
+         <li><strong>POOR LEVEL PROSPECT</strong></li>
+         <ul>
+            <li>PROJECTION: CJFL/JUCO CAMP INVITE</li>
+            <li>This player lacks a strong distinct trait and is underwhelming. They struggle against their current level of competition and fail to dominate. They're worth a camp invite at the CJFL and JUCO levels.</li>
+            <li>ADD 0 stars IMAGE 0-49</li>
+         </ul>
+      </ul>
    </div>
 
 </body>
